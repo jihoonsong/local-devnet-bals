@@ -1,0 +1,32 @@
+participants:
+  - el_type: geth
+    el_image: geth-eip7928:latest
+    cl_type: lodestar
+    cl_image: lodestar-eip7928:latest
+    count: 2
+network_params:
+  genesis_delay: 20
+  fulu_fork_epoch: 0
+  gloas_fork_epoch: 1
+  perfect_peerdas_enabled: true
+  seconds_per_slot: 6
+  num_validator_keys_per_node: 32
+snooper_enabled: true
+dora_params:
+  image: jihoonsg/dora-eip7928:e138b26
+additional_services:
+  - dora
+  - tx_fuzz
+  - spamoor
+port_publisher:
+  additional_services:
+    enabled: true
+    public_port_start: 65500
+spamoor_params:
+  spammers:
+    - scenario: eoatx
+      config:
+        throughput: 100
+    - scenario: uniswap-swaps
+      config:
+        throughput: 100
