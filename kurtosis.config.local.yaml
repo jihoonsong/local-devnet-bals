@@ -1,6 +1,10 @@
 participants:
   - el_type: geth
     el_image: geth-eip7928:latest
+    cl_type: prysm
+    cl_image: prysm-beacon-chain-eip7928:latest
+    vc_type: prysm
+    vc_image: prysm-validator-eip7928:latest
     cl_type: lodestar
     cl_image: lodestar-eip7928:latest
     count: 2
