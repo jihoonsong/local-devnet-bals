@@ -13,7 +13,7 @@ network_params:
   num_validator_keys_per_node: 32
 snooper_enabled: true
 dora_params:
-  image: jihoonsg/dora-eip7928:e138b26
+  image: ethpandaops/dora:eip7928-support
 additional_services:
   - dora
   - tx_fuzz
