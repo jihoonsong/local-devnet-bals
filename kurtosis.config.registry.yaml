@@ -1,6 +1,6 @@
 participants:
   - el_type: geth
-    el_image: jihoonsg/geth-eip7928:79b06e4
+    el_image: jihoonsg/geth-eip7928:fadaff7
     cl_type: lodestar
     cl_image: jihoonsg/lodestar-eip7928:941c102
     count: 2
