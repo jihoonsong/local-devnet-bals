@@ -2,7 +2,7 @@ participants:
   - el_type: geth
     el_image: jihoonsg/geth-eip7928:fadaff7
     cl_type: lodestar
-    cl_image: jihoonsg/lodestar-eip7928:941c102
+    cl_image: ethpandaops/lodestar:bal-devnet-0-c16d7c5
     count: 2
 network_params:
   genesis_delay: 20
